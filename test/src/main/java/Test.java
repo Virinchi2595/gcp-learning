@@ -68,6 +68,9 @@ public class Test extends HttpServlet {
         }
         log.info("Done");
 
+        String body = req.getReader()
+                .lines()
+                .reduce("", (accumulator, actual) -> accumulator + actual);
         if (true) {
             log.info("Request payload: " + body);
             String output = String.format("Received task with payload %s", body);
