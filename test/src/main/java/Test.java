@@ -30,8 +30,8 @@ public class Test extends HttpServlet {
         JSONParser jsonParser = new JSONParser();
         int i =0;
         int start = 1;
-        String projectId = "ipweb-240115";
-        String subscriptionId = "patent-image-data";
+        String projectId = "gcp-learning-007";
+        String subscriptionId = "test";
         while(start>0){
             try{
                 List<ReceivedMessage> messages = createSubscriberWithSyncPull(projectId,subscriptionId,20);
