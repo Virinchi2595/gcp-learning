@@ -74,7 +74,7 @@ public class Test extends HttpServlet {
         if (true) {
             log.info("Request payload: " + body);
             String output = String.format("Received task with payload %s", body);
-            resp.getOutputStream().write(output.getBytes());
+//            resp.getOutputStream().write(output.getBytes());
             log.info("Sending response: " + output);
             resp.setStatus(HttpServletResponse.SC_OK);
         } else {
