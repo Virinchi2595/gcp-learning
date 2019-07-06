@@ -64,6 +64,10 @@ public class Test extends HttpServlet {
             }
             catch (Exception e){
                 log.log(Level.INFO,"*************"+e.getMessage());
+                log.log(Level.INFO,"*************"+e.getCause());
+                log.log(Level.INFO,"*************"+e.getStackTrace());
+                log.log(Level.INFO,"*************"+e.getClass());
+                log.log(Level.INFO,"*************"+e.getSuppressed());
             }
         }
         log.info("Done");
